@@ -1,2 +1,7 @@
 .vs/AspNet5SearchWithElasticsearchCrud/v14/.suo
 src/AspNet5SearchWithElasticsearchCrud/AspNet5SearchWithElasticsearchCrud.xproj.user
+src/AspNet5SearchWithElasticsearchCrud/obj
+src/AspNet5SearchWithElasticsearchCrud/bin
+src/AspNet5SearchWithElasticsearchCrud/project.lock.json
+.vs/config/applicationhost.config
+.vs/restore.dg

@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using AspNet5SearchWithElasticsearchCrud.Search;
 
 namespace AspNet5SearchWithElasticsearchCrud.Controllers
 {
-    using AspNet5SearchWithElasticsearchCrud.Search;
-
     [Route("api/[controller]")]
     public class SearchController : Controller
     {
@@ -41,7 +38,7 @@ namespace AspNet5SearchWithElasticsearchCrud.Controllers
             return Created(url, id);
         }
 
-        [Microsoft.AspNet.Mvc.HttpPut("{id}/{updateName}/{updateDescription}")]
+        [Microsoft.AspNetCore.Mvc.HttpPut("{id}/{updateName}/{updateDescription}")]
         public IActionResult Put(long id, string updateName, string updateDescription)
         {
             _searchProvider.UpdateSkill(id, updateName, updateDescription);
@@ -51,7 +48,7 @@ namespace AspNet5SearchWithElasticsearchCrud.Controllers
 
 
         // DELETE api/values/5
-        [Microsoft.AspNet.Mvc.HttpDelete("{id}")]
+        [Microsoft.AspNetCore.Mvc.HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             _searchProvider.DeleteSkill(id);
