@@ -1,13 +1,13 @@
-﻿namespace AspNet5SearchWithElasticsearchCrud.Search
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+using ElasticsearchCRUD;
+using ElasticsearchCRUD.Model.SearchModel;
+using ElasticsearchCRUD.Model.SearchModel.Queries;
+
+namespace AspNet5SearchWithElasticsearchCrud.Search
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-
-    using ElasticsearchCRUD;
-    using ElasticsearchCRUD.Model.SearchModel;
-    using ElasticsearchCRUD.Model.SearchModel.Queries;
-
     public class ElasticSearchProvider : ISearchProvider, IDisposable
     {
         public ElasticSearchProvider()
